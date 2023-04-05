@@ -1,0 +1,17 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+seven_seas = "7r9y16bKYXK7975aWT368s6jtnkhqiHCoa96M9URK9kC"
+[programs.Devnet]
+seven_seas = "7r9y16bKYXK7975aWT368s6jtnkhqiHCoa96M9URK9kC"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/devenv/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
